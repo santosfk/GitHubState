@@ -1,25 +1,30 @@
 import React from "react";
 import * as style from "./style";
 
-function Profile() {
+type Props = {
+  src: string;
+  Name: string;
+  Repo: Number;
+  Followers: Number;
+  Bio: string;
+};
+function Profile({ src, Name, Repo, Followers, Bio }: Props) {
   return (
     <>
       <style.Container>
-        <style.Picture>
-          <img src="" alt="" />
-        </style.Picture>
-        <style.Name>armando</style.Name>
+        <style.Picture src={src}></style.Picture>
+        <style.Name>{Name}</style.Name>
         <style.Characteristics>
           <style.BlockChar>
             <h1>repositórios</h1>
-            <h2>{25}</h2>
+            <h2>{Repo}</h2>
           </style.BlockChar>
           <style.BlockChar>
             <h1>seguidores</h1>
-            <h2>{30}</h2>
+            <h2>{Followers}</h2>
           </style.BlockChar>
         </style.Characteristics>
-        <style.Bio>sou um programador que programa programas</style.Bio>
+        <style.Bio>{Bio}</style.Bio>
       </style.Container>
     </>
   );

@@ -14,12 +14,13 @@ export const Container = styled.div`
   color: white;
 `;
 
-export const Picture = styled.div`
+export const Picture = styled.img`
   background-color: aliceblue;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 1px solid transparent;
+  outline: none;
   :hover {
     border: 1px solid #bde038;
   }
