@@ -18,8 +18,8 @@ function Profile() {
             <h1>seguidores</h1>
             <h2>{30}</h2>
           </style.BlockChar>
-          <style.Bio>sou um programador que programa programas</style.Bio>
         </style.Characteristics>
+        <style.Bio>sou um programador que programa programas</style.Bio>
       </style.Container>
     </>
   );
