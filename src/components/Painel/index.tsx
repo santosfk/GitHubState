@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import * as style from "./style";
 import Search from "../search/index";
 import Profile from "../profile/index";
 import { context } from "../../context";
 function Painel() {
   const receiveData: any = useContext(context);
+
   return (
     <style.Container>
       <Search />
