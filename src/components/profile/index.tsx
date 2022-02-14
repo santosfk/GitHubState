@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import * as style from "./style";
-
+import { context } from "../../context";
 type Props = {
   src: string;
   Name: string;

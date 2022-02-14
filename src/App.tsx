@@ -1,10 +1,13 @@
 import * as style from "./styleApp";
 import Container from "./components/container";
+import { ContextProvider } from "./context";
 function App() {
   return (
     <>
-      <style.Title>GitHub.State</style.Title>
-      <Container />
+      <ContextProvider>
+        <style.Title>GitHub.State</style.Title>
+        <Container />
+      </ContextProvider>
     </>
   );
 }
