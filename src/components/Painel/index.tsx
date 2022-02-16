@@ -5,16 +5,20 @@ import Profile from "../profile/index";
 import { context } from "../../context";
 function Painel() {
   const receiveData: any = useContext(context);
-
+  const src: string = receiveData.userData.avatar_url;
+  const name: string = receiveData.userData.name;
+  const repo: Number = receiveData.userData.public_repos;
+  const followers: Number = receiveData.userData.followers;
+  const bio: string = receiveData.userData.bio;
   return (
     <style.Container>
       <Search />
       <Profile
-        src={receiveData.userData.avatar_url}
-        Name={receiveData.userData.name}
-        Repo={receiveData.userData.public_repos}
-        Followers={receiveData.userData.followers}
-        Bio={receiveData.userData.bio}
+        src={src}
+        Name={name}
+        Repo={repo}
+        Followers={followers}
+        Bio={bio}
       />
     </style.Container>
   );
