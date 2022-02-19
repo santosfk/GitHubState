@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Card from "../card/index";
-import Search from "../search";
+import Card from "../../components/card/index";
+import Search from "../../components/search";
 import { context } from "../../context";
-function Container() {
+function Home() {
   const receiveData: any = useContext(context);
   console.log(receiveData);
   const src: string = receiveData.userData.avatar_url;
@@ -27,4 +27,4 @@ function Container() {
   );
 }
 
-export default Container;
+export default Home;
