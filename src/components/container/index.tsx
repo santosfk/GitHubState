@@ -13,7 +13,15 @@ function Container() {
   return (
     <>
       <Search />
-      <Card src={src} name={name} repo={repo} followers={followers} bio={bio} />
+      {name && (
+        <Card
+          src={src}
+          name={name}
+          repo={repo}
+          followers={followers}
+          bio={bio}
+        />
+      )}
       ;
     </>
   );

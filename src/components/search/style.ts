@@ -10,7 +10,7 @@ export const Container = styled.div`
     border: solid 1px #bde038;
     outline: none;
     border-radius: 10px;
-    color: white;
+    color: black;
     background-color: transparent;
     font-size: 1.2rem;
     transition: ease 0.5s;
