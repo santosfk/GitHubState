@@ -5,7 +5,10 @@ function App() {
   return (
     <>
       <ContextProvider>
-        <style.Title>GitHub.State</style.Title>
+        <style.HeaderBar>
+          <h1>me</h1>
+          <h1>myPacks</h1>
+        </style.HeaderBar>
         <Container />
       </ContextProvider>
     </>

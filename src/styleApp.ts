@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const Title = styled.h1`
-  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rowdies&display=swap");
-  color: #10454f;
+export const HeaderBar = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap");
+  color: #0f870d;
   margin-top: -10px;
   text-align: center;
-  font-size: 2.7rem;
-  font-weight: 100;
-  font-family: "Rowdies", "cursive";
+  font-size: 1rem;
+  font-family: "Signika", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
 `;
