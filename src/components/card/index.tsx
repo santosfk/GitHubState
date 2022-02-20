@@ -21,9 +21,8 @@ function Card({ src, name, repo, followers, bio }: Props) {
           <h2>{followers}</h2>
         </style.Content>
       </style.Infos>
-      <style.Info>
-        <div>{bio}</div>
-      </style.Info>
+      <style.Info>Add In Pack</style.Info>
+      <style.MoreSkills>More skills </style.MoreSkills>
     </style.Container>
   );
 }

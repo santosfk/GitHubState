@@ -9,7 +9,7 @@ export const Container = styled.div`
   margin: auto;
   margin-top: 5rem;
   border: 1px solid #bde038;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 1.5rem 2rem;
   overflow-x: hidden;
   display: flex;
@@ -43,6 +43,30 @@ export const Content = styled.div`
     font-size: 2.5rem;
   }
 `;
-export const Info = styled.span`
+export const Info = styled.button`
+  background-color: black;
+  margin-top: 1rem;
+  width: 200px;
+  height: 40px;
   color: #04e000;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+  transition: 0.4s;
+  :hover {
+    border-radius: 15px;
+    letter-spacing: 1px;
+  }
+`;
+export const MoreSkills = styled.h1`
+  position: relative;
+  bottom: -20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  :hover {
+    color: #04e000;
+  }
 `;
