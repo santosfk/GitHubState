@@ -9,7 +9,7 @@ function RoutesFunc() {
     <Routes>
       <Route path="" element={<Home />} />
       <Route path="me" element={<Me />} />
-      <Route path="me" element={<MyPacks />} />
+      <Route path="mypacks" element={<MyPacks />} />
     </Routes>
   );
 }
