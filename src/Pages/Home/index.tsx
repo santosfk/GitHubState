@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Card from "../../components/card/index";
 import Search from "../../components/search";
+import Header from "../../components/header";
 import { context } from "../../context";
 function Home() {
   const receiveData: any = useContext(context);
@@ -12,6 +13,7 @@ function Home() {
   const bio: string = receiveData.userData.bio;
   return (
     <>
+      <Header />
       <Search />
       {name && (
         <Card
