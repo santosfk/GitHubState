@@ -20,7 +20,16 @@ function Card({ src, name, repo, followers, bio }: Props) {
   return (
     <>
       <style.Container>
-        {modalSkills && <ModalSkills ModalOn={setModalSkills} />}
+        {modalSkills && (
+          <ModalSkills
+            ModalOn={setModalSkills}
+            src={src}
+            name={name}
+            repo={repo}
+            followers={followers}
+            bio={bio}
+          />
+        )}
         <style.Picture src={src} />
         <style.Name>{name}</style.Name>
         <style.Infos>

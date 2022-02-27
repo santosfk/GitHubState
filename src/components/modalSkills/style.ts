@@ -28,3 +28,14 @@ export const Container = styled.div`
     letter-spacing: 3px;
   }
 `;
+export const Title = styled.div`
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+`;
+export const Bio = styled.div`
+  text-align: center;
+`;
+export const Skills = styled.div``;
+export const Repo = styled.div``;
+export const Followers = styled.div``;
