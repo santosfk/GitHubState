@@ -20,6 +20,7 @@ function Card({ src, name, repo, followers, bio }: Props) {
   return (
     <>
       <style.Container>
+        {modalSkills && <ModalSkills ModalOn={setModalSkills} />}
         <style.Picture src={src} />
         <style.Name>{name}</style.Name>
         <style.Infos>
@@ -35,7 +36,9 @@ function Card({ src, name, repo, followers, bio }: Props) {
         <style.Info onClick={() => handleChangeRoute("mypacks")}>
           Add In Pack
         </style.Info>
-        <style.MoreSkills>More skills</style.MoreSkills>
+        <style.MoreSkills onClick={() => setModalSkills(true)}>
+          More skills
+        </style.MoreSkills>
       </style.Container>
     </>
   );
