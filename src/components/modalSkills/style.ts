@@ -1,13 +1,23 @@
 import styled from "styled-components";
 
+export const Backdrop = styled.div`
+  background-color: rgb(169, 169, 169, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+`;
+
 export const Container = styled.div`
-  width: 800px;
+  width: 50%;
   height: 700px;
   bottom: 10px;
   background-color: white;
   position: absolute;
-  box-shadow: 2px 2px 3px;
+  box-shadow: 2px 2px 5px;
+  border-radius: 10px;
   z-index: 2;
+  left: 25rem;
   button {
     background-color: #41d773;
     color: white;
@@ -15,7 +25,7 @@ export const Container = styled.div`
     position: relative;
     left: 40%;
     right: 50%;
-    top: 90%;
+    top: 50%;
     width: 150px;
     height: 50px;
     border: none;

@@ -1,7 +1,7 @@
 import React from "react";
 
 function Me() {
-  return <h1>eu porra</h1>;
+  return <h1>yoour profile here</h1>;
 }
 
 export default Me;
