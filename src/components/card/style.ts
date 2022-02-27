@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap");
   font-family: "Signika", sans-serif;
-  background-color: #0c8b37;
+  background-color: black;
   width: 300px;
   height: 380px;
   margin: auto;
   margin-top: 5rem;
-  border: 1px solid #bde038;
+  border: 2px solid #bde038;
   border-radius: 25px;
   padding: 1.5rem 2rem;
   overflow-x: hidden;
@@ -20,6 +20,10 @@ export const Container = styled.div`
 export const Picture = styled.img`
   width: 100px;
   border-radius: 50%;
+  transition: 0.4s;
+  :hover {
+    border-radius: 35%;
+  }
 `;
 export const Name = styled.h1`
   font-size: 1rem;
@@ -33,6 +37,7 @@ export const Infos = styled.div`
 export const Content = styled.div`
   text-align: center;
   margin: 10px 50px;
+  color: #04e000;
   h1 {
     font-weight: bold;
     color: white;
@@ -44,11 +49,11 @@ export const Content = styled.div`
   }
 `;
 export const Info = styled.button`
-  background-color: black;
+  background-color: #04e000;
   margin-top: 1rem;
   width: 200px;
   height: 40px;
-  color: #04e000;
+  color: black;
   font-weight: bold;
   outline: none;
   border: none;
@@ -66,6 +71,7 @@ export const MoreSkills = styled.h1`
   font-size: 1rem;
   cursor: pointer;
   transition: 0.4s;
+  color: white;
   :hover {
     color: #04e000;
   }

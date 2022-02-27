@@ -7,7 +7,7 @@ export const Container = styled.div`
   input {
     margin: 5px 15px;
     width: 500px;
-    border: solid 1px #bde038;
+    border: solid 1px #04e000;
     outline: none;
     border-radius: 10px;
     color: black;
@@ -24,6 +24,6 @@ export const Container = styled.div`
   .icon {
     margin: 15px;
     font-size: 1.5rem;
-    color: #bde038;
+    color: #04e000;
   }
 `;

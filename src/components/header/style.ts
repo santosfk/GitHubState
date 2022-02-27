@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: 90px;
   @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
-  background-color: #41d773;
+  background-color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
@@ -14,10 +14,10 @@ export const Container = styled.div`
 
   h1 {
     transition: 0.5s;
-    color: white;
+    color: #04e000;
   }
   h1:hover {
-    color: black;
+    color: white;
     transform: translateY(5px);
   }
   .link {
