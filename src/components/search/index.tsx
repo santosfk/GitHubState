@@ -14,10 +14,6 @@ function Search({}) {
     }
   }
 
-  const testando = () => {
-    //função somente de teste
-    console.log(" allo brasil");
-  };
   const receiveContext: any = useContext(context);
 
   return (

@@ -9,7 +9,7 @@ function Header() {
           <h1>Me</h1>
         </Link>
         <Link to="mypacks" className="link">
-          <h1>My Packs</h1>
+          <h1> Packs</h1>
         </Link>
       </style.Container>
     </>
