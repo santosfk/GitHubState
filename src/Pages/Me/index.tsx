@@ -1,14 +1,26 @@
-import React, { useState, useRef } from "react";
-
+import React, { useState, useRef, useEffect } from "react";
+import client from "../../services/client";
+import * as style from "./style";
 function Me() {
+  const [userReceive, setUserReceive] = useState<Object>({});
+  const [modalOn, setModalOn] = useState(false);
   const userRef = useRef<HTMLInputElement>(null);
   const nameRef = useRef<HTMLInputElement>(null);
-  const [userReceive, setUserReceive] = useState("");
-
-  const Logar = () => {
-    console.log(userRef.current?.value);
-    console.log(nameRef.current?.value);
+  const Logar = async () => {
+    try {
+      const Response = await client.get(`/${userRef.current?.value}`);
+      setUserReceive(Response?.data);
+    } catch {
+      alert("seu usuario está incorreto");
+    }
   };
+  console.log(userReceive);
+  console.log(modalOn);
+  {
+    userReceive?.name === nameRef.current?.value
+      ? setModalOn(true)
+      : setModalOn(false);
+  }
   return (
     <>
       <h1>Make Your Login </h1>
