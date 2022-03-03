@@ -9,20 +9,18 @@ function Me() {
   const Logar = async () => {
     try {
       const Response = await client.get(`/${userRef.current?.value}`);
-      setUserReceive(Response?.data);
+      setUserReceive(Response.data);
+      if (userReceive?.name === nameRef.current?.value) [setModalOn(true)];
     } catch {
       alert("seu usuario está incorreto");
     }
   };
-  console.log(userReceive);
+
   console.log(modalOn);
-  {
-    userReceive?.name === nameRef.current?.value
-      ? setModalOn(true)
-      : setModalOn(false);
-  }
+
   return (
     <>
+      {modalOn && <style.LoginModal />}
       <h1>Make Your Login </h1>
       <input
         type="text"
