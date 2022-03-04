@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import client from "../../services/client";
+import LoginModal from "../../components/LoginModal/LoginModal";
 import * as style from "./style";
 function Me() {
   const [userReceive, setUserReceive] = useState<Object>({});
@@ -15,12 +16,12 @@ function Me() {
       alert("seu usuario está incorreto");
     }
   };
-
+  console.log(userReceive);
   console.log(modalOn);
 
   return (
     <>
-      {modalOn && <style.LoginModal />}
+      {modalOn && <LoginModal response={Response} />}
       <h1>Make Your Login </h1>
       <input
         type="text"
