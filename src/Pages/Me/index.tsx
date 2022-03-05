@@ -23,7 +23,7 @@ function Me() {
 
   return (
     <style.Container>
-      {modalOn && <LoginModal response={Response} />}
+      {modalOn && <LoginModal userReceive={userReceive} />}
       <style.Content>
         <style.Title>Faça Seu Login </style.Title>
         <style.InputContent>

@@ -1,9 +1,16 @@
 import React from "react";
+import * as style from "./style";
 type Props = {
-  response: Object;
+  userReceive: Object;
 };
-function LoginModal({ response }: Props) {
-  return <h1>alo grai</h1>;
+function LoginModal({ userReceive }: Props) {
+  return (
+    <style.Container>
+      <style.Img src={userReceive.avatar_url} />
+      <style.Name>{userReceive.name}</style.Name>,
+      <style.Login>{userReceive.login}</style.Login>
+    </style.Container>
+  );
 }
 
 export default LoginModal;
