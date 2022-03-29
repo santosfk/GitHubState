@@ -9,7 +9,7 @@ export const Container = styled.div`
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: white;
   top: 0;
   color: white;
   h3 {
@@ -25,6 +25,7 @@ export const Container = styled.div`
   h2 {
     text-align: center;
     margin-top: -3px;
+    color: black;
   }
 `;
 export const Img = styled.img`
